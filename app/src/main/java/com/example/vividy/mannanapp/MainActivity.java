@@ -49,6 +49,7 @@ import io.vividtech.pimpmycall.PimpMyCallUtils;
 
 public class MainActivity extends AppCompatActivity {
 
+    private int extremeVariabke = 0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
