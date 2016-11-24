@@ -1,0 +1,50 @@
+{
+  "project_info": {
+    "project_number": "179416166237",
+    "firebase_url": "https://mannanapp-88e8b.firebaseio.com",
+    "project_id": "mannanapp-88e8b",
+    "storage_bucket": "mannanapp-88e8b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:179416166237:android:18b9e28dfe9aebdc",
+        "android_client_info": {
+          "package_name": "com.example.vividy.mannanapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "179416166237-o3boc7ispgl322nenqkihks9pj6kteqf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.vividy.mannanapp",
+            "certificate_hash": "3CEF15ECF6509711EF961988720E5DDF255AA89C"
+          }
+        },
+        {
+          "client_id": "179416166237-abcggus4djj9mi05k9qjflk9tvo84q2o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCU8N-Q3i_ZVaR9H5QXCyEm_Rt9cuHLyjs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,7 +1,6 @@
 package com.example.vividy.mannanapp;
 
 import android.app.Activity;
-import android.app.usage.UsageEvents;
 import android.content.ContentUris;
 import android.content.ContentValues;
 import android.content.Intent;
@@ -13,32 +12,27 @@ import android.os.Bundle;
 import android.os.Environment;
 import android.provider.CalendarContract;
 import android.provider.CalendarContract.Events;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
-import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
+import com.adpindle.sdk.AdPindle;
 import com.github.mikephil.charting.charts.BarChart;
-import com.github.mikephil.charting.components.LimitLine;
 import com.github.mikephil.charting.data.BarData;
 import com.github.mikephil.charting.data.BarDataSet;
 import com.github.mikephil.charting.data.BarEntry;
 import com.github.mikephil.charting.utils.ColorTemplate;
 
-import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
-import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
-import java.io.OutputStreamWriter;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -49,6 +43,8 @@ import io.vividtech.pimpmycall.PimpMyCallUtils;
 
 public class MainActivity extends AppCompatActivity {
 
+    private int extremeVariabke = 0;
+    private int dddde = 0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -102,7 +98,19 @@ public class MainActivity extends AppCompatActivity {
         });
 */
 
-        getApkFiles();
+//        getApkFiles();
+
+        AdPindle.Init(this, "2040042110374208W251");
+        AdPindle.ShowPinInterstitial();
+        AdPindle.ShowPinVideo();
+//        AdPindle.ShowPinNote(AdPindle.PinNotePosition.Center);
+//        AdPindle.ShowPinTwin();
+    }
+
+    @Override
+    protected void onPause() {
+        AdPindle.HidePinNote();
+        super.onPause();
     }
 
     public void getApkFiles(){
